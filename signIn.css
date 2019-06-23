@@ -1,0 +1,31 @@
+body{
+    background-color: #f4f4f4;
+    font-family: 'Raleway', sans-serif;
+}
+.header {
+    padding: 10px;
+    text-align: center;
+}
+.column{
+    float: left;
+}
+.fieldset {
+    border-color: cornflowerblue;
+    border-radius: 15px;
+}
+.relative {
+    position: relative;
+}
+input[type=text], input[type=password], input[type=submit] {
+    width: 100%;
+    padding: 8px 8px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.fa fa-user-o {
+    padding: 5px;
+    margin: 5px;
+}
