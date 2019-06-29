@@ -5,8 +5,9 @@ body{
 .header {
     padding: 10px;
     text-align: center;
+    left: 50%;
 }
-.section:after{
+.section{
     width: 30%;
     padding: 10px;
     margin-top: 20px;
@@ -31,23 +32,25 @@ input[type=text], input[type=password], input[type=submit] {
     border-radius: 15px;
     box-sizing: border-box;
 }
-.fa fa-user-o {
+.fa {
     padding: 5px;
     margin: 5px;
 }
 .footer{
-    padding: 10px;
-    text-align: center;
-    background: #ddd;
-    margin-bottom: 100%;
+    width: 100%;
+    bottom: 2%;
+    position: fixed;
 }
 .tableSecondary{
     font-size: 12px;
     text-align: center;
-    padding: 5px 0px;
+    padding: 5px;
     margin: 5px;
     position: center;
 }
-.checkBox{
-
+.img{
+    border: 1px solid #ddd;
+    border-radius: 50%  ;
+    padding: 5px;
+    width: 150px;
 }
