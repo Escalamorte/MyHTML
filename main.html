@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Main</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -11,64 +12,107 @@
     <header>
         <div class="header">
             <h1>Welcome!</h1>
+            <p>This is Header</p>
         </div>
     </header>
     <section class="section">
-        <div class="columnLeft">
-            <h2>Sign In</h2>
-            <form>
-                <table id="tableSingIn">
-                    <tr>
-                        <td><i class="fa fa-user-o" aria-hidden="true"></i>Login</td>
-                        <td><label>
-                            <input type="text" name="login" placeholder="Login">
-                        </label></td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa fa-lock" aria-hidden="true"></i>Password</td>
-                        <td><label>
-                            <input type="password" name="password" placeholder="Password">
-                        </label></td>
-                    </tr>
-                    <tr class="tableSecondary">
-                        <td class="checkBox"><label>
-                            <input type="checkbox" name="rememberMe" checked>
-                        </label>Remember Me</td>
-                        <td><a href="">Forgot your password?</a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><input type="submit" name="login" value="Submit"></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-        <div class="columnLeft">
-            <h2>AZN Rates</h2>
-            <table id="tableRates">
-                <tr>
-                    <td>1 USD</td>
-                    <td>1.7000</td>
-                </tr>
-                <tr>
-                    <td>1 EUR</td>
-                    <td>1.9178</td>
-                </tr>
-                <tr>
-                    <td>1 RUB</td>
-                    <td>0.0268</td>
-                </tr>
-                <tr>
-                    <td>1 TRY</td>
-                    <td>0.3028</td>
-                </tr>
-            </table>
-        </div>
-        <div class="columnCenter">
-            <h1>NEWS</h1>
+        <div class="row">
+            <div class="leftColumn">
+                <div class="card">
+                    <h2>Sign In</h2>
+                    <form>
+                        <table id="tableSingIn">
+                            <tr>
+                                <td><i class="fa fa-user-o" aria-hidden="true"></i>Login</td>
+                                <td><label>
+                                    <input type="text" name="login" placeholder="Login">
+                                </label></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-lock" aria-hidden="true"></i>Password</td>
+                                <td><label>
+                                    <input type="password" name="password" placeholder="Password">
+                                </label></td>
+                            </tr>
+                            <tr class="tableSecondary">
+                                <td class="checkBox"><label>
+                                    <input type="checkbox" name="rememberMe" checked>
+                                </label>Remember Me</td>
+                                <td><a href="">Forgot your password?</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><input type="submit" name="login" value="Submit"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="leftColumn">
+                <div class="card">
+                    <h2>AZN Rates</h2>
+                    <table id="tableRates">
+                        <tr>
+                            <td>1 USD</td>
+                            <td>1.7000</td>
+                        </tr>
+                        <tr>
+                            <td>1 EUR</td>
+                            <td>1.9178</td>
+                        </tr>
+                        <tr>
+                            <td>1 RUB</td>
+                            <td>0.0268</td>
+                        </tr>
+                        <tr>
+                            <td>1 TRY</td>
+                            <td>0.3028</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="middleColumn">
+                <div class="card">
+                    <h1>NEWS</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                        Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.
+                        Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+                        Praesent scelerisque tortor sed accumsan convallis.
+                    </p>
+                </div>
+            </div>
+            <div class="leftColumn">
+                <div class="card">
+                    <h2>JavaScript Calc</h2>
+                    <form id="calc">
+                        <input type="text" name="fNum" value="" placeholder="First Number">
+                        <input type="text" name="sNum" value="" placeholder="Second Number">
+                        <input type="text" name="res"  value="" placeholder="Result" disabled >
+                        <button type="button" class="operator" value="+" onclick="x">+</button>
+                        <button type="button" class="operator" value="-">-</button>
+                        <button type="button" class="operator" value="*">&times;</button>
+                        <button type="button" class="operator" value="/">&divide;</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer">
         <p class="tableSecondary"><a href="about.html">About me</a></p>
     </footer>
+    <script>
+        var fNum;
+        var sNum;
+
+        function takeF(x) {
+            document.getElementById(fNum).value += x;
+        }
+        function takeS(y) {
+            document.getElementById(sNum).value += y;
+        }
+        function calc() {
+            var res = eval(document.getElementById())
+            
+        }
+    </script>
 </body>
 </html>
