@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("17580.jpg");
-    background-repeat: repeat-x;
+    background: url("17580.jpg") repeat-x;
     font-family: 'Raleway', sans-serif;
 }
 header {
@@ -41,6 +40,7 @@ nav li a:hover:not(.active) {
     background-color: #809fd1;
 }
 section:after{
+    margin: auto;
     width: 100%;
     float: left;
 }
@@ -75,8 +75,6 @@ section:after{
     margin-bottom: 5px;
 }
 .fieldset{
-    /*border-color: cornflowerblue;*/
-    /*border-radius: 2px;*/
     margin: 3%;
     box-sizing: border-box;
 }
@@ -84,18 +82,16 @@ section:after{
     width: 100%;
     padding: 1px 1px;
 }
-input[type=text], input[type=password], input[type=submit] {
+input[type=text], input[type=password], input[type=submit]{
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-
 }
 input[type=submit] {
     background-color: #bdc5f0;
 }
-
 .fa {
     padding: 5px;
     margin: 5px;
@@ -144,6 +140,8 @@ footer{
     text-align: left;
 }
 .calc{
+    margin: auto;
+    width: 300px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -179,4 +177,14 @@ footer{
 .calc button:hover {
     background-color: #008CBA;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.horo button, .horo input[type=date]{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: auto;
+    width: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horoscope</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/a5a6bbda4a.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="main.html"> Welcome!</a></h1>
+        <p>Maybe here will be a logo...</p>
+    </header>
+    <section>
+        <nav>
+            <div class="card">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="calc.html">Calc</a></li>
+                    <li><a href="horo.html">Horoscope</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="horo">
+            <div class="card">
+                <form>
+                    <fieldset>
+                        <input type="date" id="bday" name="bday" value="1900-01-01">
+                        <button type="button" onclick="horoscope()">Submit</button>
+                    </fieldset>
+                    <p id="horoscope"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="card">
+            <p class="tableSecondary"><a href="about.html">Copyright və nə bilim nə...</a></p>
+        </div>
+    </footer>
+    <script>
+        function horoscope() {
+            var bday = document.getElementById('bday').value.substring(0,4);
+            document.getElementById('horoscope').innerHTML = bday;
+            while (bday >= 1912) {
+                bday -= 12;
+            }
+            switch (bday - 1899) {
+                case 1:
+                    document.getElementById('horoscope').innerHTML = "Rat";
+                    break
+                case 2:
+                document.getElementById('horoscope').innerHTML = "Ox";
+                    break;
+                case 3:
+                    document.getElementById('horoscope').innerHTML = "Tiger";
+                    break;
+                case 4:
+                    document.getElementById('horoscope').innerHTML = "Rabbit ";
+                    break;
+                case 5:
+                    document.getElementById('horoscope').innerHTML = "Dragon ";
+                    break;
+                case 6:
+                    document.getElementById('horoscope').innerHTML = "Snake";
+                    break;
+                case 7:
+                    document.getElementById('horoscope').innerHTML = "Horse";
+                    break;
+                case 8:
+                    document.getElementById('horoscope').innerHTML = "Goat";
+                    break;
+                case 9:
+                    document.getElementById('horoscope').innerHTML = "Monkey";
+                    break;
+                case 10:
+                    document.getElementById('horoscope').innerHTML = "Rooster";
+                    break;
+                case 11:
+                    document.getElementById('horoscope').innerHTML = "Dog";
+                    break;
+                case 12:
+                    document.getElementById('horoscope').innerHTML = "Pig";
+                    break;
+                default:
+                    document.getElementById('horoscope').innerHTML = "Hmm... Something went wrong...";
+                    document.getElementById('horoscope').innerHTML = "Check your birth year. It must be greater or equal 1900";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
