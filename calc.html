@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/a5a6bbda4a.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4130aeabaa.js"></script>
 </head>
 <body>
     <header>
@@ -29,40 +31,36 @@
                     <table>
                         <tr>
                             <td colspan="4">
-                                <form>
-                                    <label>
-                                        <input type="text" name="calcScreen" value="0" disabled>
-                                    </label>
-                                </form>
+                                <textarea name="calcScreen" id="calcScreen" disabled></textarea>
                             </td>
                         </tr>
                         <tr>
-                            <td><button name="AC" value="AC">AC</button></td>
-                            <td><button name="backspace" value="←">←</button></td>
-                            <td><button name="percent" value="%">%</button></td>
-                            <td><button name="percent" value="/">/</button></td>
+                            <td><button name="AC" value="AC"><i class="fas fa-trash-alt"></i></button></td>
+                            <td><button name="backspace" value="backspace"><i class="fas fa-backspace"></i></button></td>
+                            <td><button name="percent" value="percent"><i class="fas fa-percentage"></i></button></td>
+                            <td><button name="percent" value="devide"><i class="fas fa-divide"></i></button></td>
                         </tr>
                         <tr>
                             <td><button name="seven" onclick="">7</button></td>
                             <td><button name="eight">8</button></td>
                             <td><button name="nine">9</button></td>
-                            <td><button name="subs">*</button></td>
+                            <td><button name="times"><i class="fas fa-times"></i></button></td>
                         </tr>
                         <tr>
                             <td><button name="four">4</button></td>
                             <td><button name="five">5</button></td>
                             <td><button name="six">6</button></td>
-                            <td><button name="minus">-</button></td>
+                            <td><button name="minus"><i class="fas fa-minus"></i></button></td>
                         </tr>
                         <tr>
                             <td><button name="one">1</button></td>
                             <td><button name="two">2</button></td>
                             <td><button name="three">3</button></td>
-                            <td rowspan="2"><button name="plus">+</button></td>
+                            <td rowspan="2"><button name="plus"><i class="fas fa-plus"></i></button></td>
                         </tr>
                         <tr>
-                            <td><button name="one">1</button></td>
-                            <td><button name="zero">0</button></td>
+                            <td><button name="renew"><i class="fas fa-retweet"></i></button></td>
+                            <td><button name="zero" value="0" onclick="display()">0</button></td>
                             <td><button name="dot">.</button></td>
                         </tr>
                     </table>
@@ -77,7 +75,8 @@
     </footer>
 <script>
     function display() {
-
+        var value = document.getElementsByName('zero').value;
+        document.getElementById('calcScreen').innerHTML = value;
     }
 </script>
 </body>

@@ -145,45 +145,7 @@ footer{
     padding: .5em;
     text-align: left;
 }
-.calc{
-    margin: auto;
-    width: 300px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2vw;
-}
-.calc input[type="text"]{
-    padding: 18px;
-    border: 2px solid #008CBA;
-    border-radius: 5px;
-    background-color: white;
-    font-size: 32px;
-    text-align: right;
-}
-.calc button[name="plus"]{
-    height: 106px;
-}
-.calc button{
-    background-color: white;
-    width: 65px;
-    height: 50px;
-    color: black;
-    padding: 8px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border: 2px solid #008CBA;
-    border-radius: 5px;
-}
-.calc button:hover {
-    background-color: #008CBA;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+
 .horo button, .horo select{
     font-family: 'Raleway', sans-serif;
     margin: auto;
@@ -196,4 +158,47 @@ footer{
 .horo table{
     width: 100%;
     padding: 1px;
+}
+/*Calc*/
+.calc{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+}
+.calc textarea{
+    width: 100%;
+    padding: 18px;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 32px;
+    text-align: right;
+    resize: none;
+}
+.calc button[name="plus"]{
+    height: 126px;
+    background:  #F97300;
+}
+.calc button{
+    background-color: white;
+    width: 100px;
+    height: 60px;
+    color: black;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.calc button:hover {
+    background-color: #008CBA;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
