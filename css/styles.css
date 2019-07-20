@@ -161,12 +161,12 @@ footer{
 }
 /*Calc*/
 .calc{
-    margin: auto;
+    margin: 3px;
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2vw;
+    grid-gap: 1vw;
 }
 .calc textarea{
     width: 100%;
@@ -184,7 +184,7 @@ footer{
 }
 .calc button{
     background-color: white;
-    width: 100px;
+    width: 80px;
     height: 60px;
     color: black;
     padding: 8px 10px;
@@ -199,6 +199,6 @@ footer{
     font-weight: bold;
 }
 .calc button:hover {
-    background-color: #008CBA;
+    background-color: #bdc5f0;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
